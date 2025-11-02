@@ -181,5 +181,35 @@ html {
 }
 /* Make sure the section has an explicit min-height so the background is visible */
 
+.page .compliments {
+  background: url('A_seamless_digital_illustration_features_a_pastel_.png') center/cover no-repeat;
+  min-height: 100vh;
+}
 
 
+/* Responsive flower positioning for mobile */
+@media (max-width: 768px) {
+  .flower {
+    width: 45px; /* smaller flowers on phone */
+    opacity: 0.9;
+  }
+
+  .f1 { top: 10%; left: 10%; }
+  .f2 { top: 10%; right: 10%; }
+  .f3 { top: 25%; left: 5%; }
+  .f4 { top: 25%; right: 5%; }
+  .f5 { top: 45%; left: 10%; }
+  .f6 { top: 45%; right: 10%; }
+  .f7 { bottom: 25%; left: 20%; }
+  .f8 { bottom: 25%; right: 20%; }
+  .f9 { bottom: 8%; left: 30%; }
+  .f10 { bottom: 8%; right: 30%; }
+}
+/* Fix white bars on mobile full-screen sections */
+.first {
+  min-height: 100dvh; /* dynamic viewport height (fixes white bars) */
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
