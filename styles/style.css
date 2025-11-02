@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(120deg, #e166be 0%, #d955ca 100%);
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Each section fills one screen */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* -------- Page 1 -------- */
+.first {
+  position: relative;
+  background: linear-gradient(135deg, #ff91b6, #17040e);
+  overflow: hidden;
+}
+
+.first h1 {
+  font-size: 70px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ffbcf9, #ff9def, #ad44ab);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 3px;
+  z-index: 2;
+}
+
+
+.flower {
+  position: absolute;
+  width: 80px;
+  opacity: 0.8;
+  animation: float 12s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-40px) rotate(20deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+
+.f1 { top: 8%; left: 20%; animation-delay: 0s; }
+.f2 { top: 8%; right: 20%; animation-delay: 1s; }
+.f3 { top: 25%; left: 10%; animation-delay: 2s; }
+.f4 { top: 25%; right: 10%; animation-delay: 3s; }
+.f5 { top: 45%; left: 5%; animation-delay: 4s; }
+.f6 { top: 45%; right: 5%; animation-delay: 5s; }
+.f7 { bottom: 20%; left: 15%; animation-delay: 6s; }
+.f8 { bottom: 20%; right: 15%; animation-delay: 7s; }
+.f9 { bottom: 10%; left: 30%; animation-delay: 8s; }
+.f10 { bottom: 10%; right: 30%; animation-delay: 9s; }
+
+/* Page 2 */
+.compliments {
+  background: #fff;
+  color: #444;
+}
+
+.compliments h2 {
+  font-size: 34px;
+  color: #ff7ca0;
+  margin-bottom: 30px;
+}
+
+.compliments p {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #555;
+}
+
+/* Page 3 */
+.birthday {
+  position: relative;
+  background: linear-gradient(135deg, #ff91b6, #17040e);
+  overflow: hidden;
+  color: #444;
+}
+
+.birthday h2 {
+  font-size: 34px;
+  color: #ff7ca0;
+  margin-bottom: 20px;
+}
+
+.birthday span {
+  font-weight: 600;
+  color: #000000;
+  font-size: 22px;
+}
+
+/* Page 4 */
+.feelings {
+  background: #fff;
+  color: #444;
+}
+
+.feelings h2 {
+  font-size: 32px;
+  color: #ff7ca0;
+  margin-bottom: 25px;
+}
+
+.image-box {
+  width: auto;
+  height: 65vh;              /* 65% of viewport height */
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;       /* shows full image without cropping */
+}
+
+.image-box2 {
+  width: auto;
+  height: 40vh;              /* 65% of viewport height */
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.image-box2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;       /* shows full image without cropping */
+}
+
+.shayari {
+  max-width: 700px;
+  font-size: 20px;
+  color: #555;
+  line-height: 1.8;
+  padding: 0 10px;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: floatArrow 2.5s ease-in-out infinite;
+  z-index: 3;
+  cursor: pointer;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.7));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.scroll-down:hover {
+  transform: translateX(-50%) scale(1.1);
+  filter: drop-shadow(0 0 12px rgba(255, 182, 193, 0.9));
+}
+
+/* Floating animation */
+@keyframes floatArrow {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -12px); }
+}
+
+/* Optional: smoother scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+/* Make sure the section has an explicit min-height so the background is visible */
+
+
+
